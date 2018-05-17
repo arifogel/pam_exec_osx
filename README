@@ -1,0 +1,1 @@
+`pam_exec_osx` is a PAM module compatible with OSX that is intended to duplicate behavior of `pam_exec` from Linux PAM.
