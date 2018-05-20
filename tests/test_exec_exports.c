@@ -9,7 +9,7 @@ void* pam_exec_osx;
 
 int main(void) {
   // Load module
-  pam_exec_osx = dlopen("../pam_exec_osx/.libs/pam_exec_osx.so", RTLD_NOW | RTLD_GLOBAL | RTLD_FIRST);
+  pam_exec_osx = dlopen(".libs/pam_exec_osx.so", RTLD_NOW | RTLD_GLOBAL | RTLD_FIRST);
   if (pam_exec_osx == NULL) {
     fprintf(stderr, "Could not open pam_exec_osx module: %s", dlerror());
     exit(1);
